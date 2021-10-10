@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product's List & Cart</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <h1>Product's List & Cart</h1>
+        <div class="row">
+            <div class="col-md-7 products-container">
+                <table class="table">
+                    <tbody id="productlist"></tbody> 
+                </table>
+            </div>
+            <div class="col-md-5" style="background-color:whitesmoke;">
+               <h1>Cart</h1>
+               <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>price</th>
+                            <th>Amount</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cartlist"></tbody> 
+                </table>
+                <!-- <hr> -->
+                <div>
+                    <p>Total</p>
+                    <p id="cartTotal"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/cart.js"></script>
+</body>
+</html>
